@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  videocall-app:
+  video-call:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "4000:4000"
+      - "80:80"
     depends_on:
       - redis
   redis:
